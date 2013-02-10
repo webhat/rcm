@@ -9,15 +9,21 @@
 
     <testsuites>
         <testsuite name="HelloWorldTest">
-            <directory suffix="Test.php">./php/test/</directory>
+            <directory suffix="Test.class.php">./rcm-controller/php/test/</directory>
+            <directory suffix="Test.class.php">./rcm-model/php/test/</directory>
+            <directory suffix="Test.class.php">./rcm-view/php/test/</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">./php/</directory>
+            <directory suffix=".php">./rcm-controller/php/</directory>
+            <directory suffix=".php">./rcm-model/php/</directory>
+            <directory suffix=".php">./rcm-view/php/</directory>
             <exclude>
-                <directory>./php/test/</directory>
+                <directory>./rcm-controller/php/test/</directory>
+                <directory>./rcm-model/php/test/</directory>
+                <directory>./rcm-view/php/test/</directory>
                 <directory>./smarty/</directory>
             </exclude>
         </whitelist>
