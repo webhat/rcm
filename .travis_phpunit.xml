@@ -22,21 +22,28 @@
             <directory suffix=".php">./rcm-view/php/</directory>
             <exclude>
                 <directory>./rcm-controller/php/test/</directory>
+                <file>./rcm-controller/php/bootstrap.php</file>
+                <file>./rcm-controller/php/RCMConfig.example.class.php</file>
                 <directory>./rcm-model/php/test/</directory>
+                <file>./rcm-model/php/test.php</file>
+                <file>./rcm-model/php/bootstrap.php</file>
+                <file>./rcm-model/php/RCMConfig.example.class.php</file>
                 <directory>./rcm-view/php/test/</directory>
+                <file>./rcm-view/php/bootstrap.php</file>
+                <file>./rcm-view/php/RCMConfig.example.class.php</file>
                 <directory>./smarty/</directory>
             </exclude>
         </whitelist>
     </filter>
 
 		<logging>
-				<log type="coverage-html" target="./ext/output/report" charset="UTF-8" yui="true" highlight="true" lowUpperBound="35" highLowerBound="70"/>
+				<log type="coverage-html" target="./output/report" charset="UTF-8" yui="true" highlight="true" lowUpperBound="35" highLowerBound="70"/>
 				<log type="coverage-text" target="php://stdout" showUncoveredFiles="true"/>
 				<!-- log type="coverage-clover" target="./ext/output/coverage.xml"/-->
-				<log type="json" target="./ext/output/logfile.json"/>
+				<log type="json" target="./output/logfile.json"/>
 				<!--log type="tap" target="./ext/output/logfile.tap"/-->
-				<log type="junit" target="./ext/output/logfile.xml" logIncompleteSkipped="false"/>
-				<log type="testdox-html" target="./ext/output/testdox.html"/>
-				<log type="testdox-text" target="./ext/output/testdox.txt"/>
+				<log type="junit" target="./output/logfile.xml" logIncompleteSkipped="false"/>
+				<log type="testdox-html" target="./output/testdox.html"/>
+				<log type="testdox-text" target="./output/testdox.txt"/>
 		</logging>
 </phpunit>

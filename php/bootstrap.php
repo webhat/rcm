@@ -1,9 +1,9 @@
 <?php
 
-require("phar://rcm-model/libs/neo4jphp.phar");
+require_once("phar://rcm-model/libs/neo4jphp.phar");
 
 
-function loader($class) {
+function loader_rcm($class) {
 	$file = "". $class . '.class.php';
 	$packages = array("rcm-model", "rcm-controller", "rcm-view");
 	$packages[] = "";
@@ -21,5 +21,5 @@ function loader($class) {
 	}
 }
 
-spl_autoload_register('loader');
+spl_autoload_register('loader_rcm');
 
