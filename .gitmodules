@@ -1,9 +1,9 @@
 [submodule "rcm-model"]
 	path = rcm-model
-	url = https://github.com:webhat/rcm-model.git
+	url = git://github.com/webhat/rcm-model.git
 [submodule "rcm-view"]
 	path = rcm-view
-	url = https://github.com:webhat/rcm-view.git
+	url = git://github.com/webhat/rcm-view.git
 [submodule "rcm-controller"]
 	path = rcm-controller
-	url = https://github.com:webhat/rcm-controller.git
+	url = git@://.com/webhat/rcm-controller.git
