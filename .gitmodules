@@ -6,4 +6,4 @@
 	url = git://github.com/webhat/rcm-view.git
 [submodule "rcm-controller"]
 	path = rcm-controller
-	url = git@://.com/webhat/rcm-controller.git
+	url = git://github.com/webhat/rcm-controller.git
